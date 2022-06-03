@@ -1,4 +1,4 @@
-module github.com/nexient-llc/tf-az-module-resource_group
+module github.com/nexient-llc/tf-azurerm-module-resource_group
 
 go 1.15
 
