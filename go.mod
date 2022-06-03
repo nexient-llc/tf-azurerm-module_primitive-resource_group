@@ -1,4 +1,4 @@
-module github.com/nexient-llc/tf-azure-resource-group
+module github.com/nexient-llc/tf-az-module-resource_group
 
 go 1.15
 
