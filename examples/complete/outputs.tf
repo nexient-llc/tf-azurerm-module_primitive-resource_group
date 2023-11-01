@@ -16,6 +16,6 @@ output "id" {
 
 output "name" {
   description = "resource group name"
-  value       = module.resource_names["resource_group"].recommended_per_length_restriction
+  value       = module.resource_names["resource_group"].minimal_random_suffix
 
 }

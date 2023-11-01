@@ -13,7 +13,7 @@
 module "resource_group" {
   source = "../.."
 
-  name       = module.resource_names["resource_group"].recommended_per_length_restriction
+  name       = module.resource_names["resource_group"].minimal_random_suffix
   location   = var.region
   tags       = var.tags
   managed_by = var.managed_by
