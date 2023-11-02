@@ -9,13 +9,13 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-terraform {
-  required_version = "<= 1.5.5"
+output "id" {
+  description = "resource group id"
+  value       = module.resource_group.id
+}
 
-  required_providers {
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = ">=3.77.0"
-    }
-  }
+output "name" {
+  description = "resource group name"
+  value       = module.resource_names["resource_group"].minimal_random_suffix
+
 }
